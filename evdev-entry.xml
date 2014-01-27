@@ -1,0 +1,19 @@
+    <layout>
+      <configItem>
+        <name>catnierds</name>
+        
+        <shortDescription>catnierds</shortDescription>
+        <description>Catnierds</description>
+        <languageList>
+          <iso639Id>catnierds</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>swedish</name>
+            <description>Catnierds (Swedish)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>

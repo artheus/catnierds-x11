@@ -1,0 +1,54 @@
+// Swedish Catnierds Layout
+
+// Letters
+default partial
+xkb_symbols "basic" {
+
+    name[Group1]="Catnierds";
+
+    key <AD01>	{ [ j, J ]	};
+    key <AD02>	{ [ k, K ]	};
+    key <AD03>	{ [ p, P ]	};
+    key <AD04>	{ [ o, O ]	};
+    key <AD05>	{ [ b, B ]	};
+    key <AD06>	{ [ g, G ]	};
+    key <AD07>	{ [ l, L ]	};
+    key <AD08>	{ [ x, X ]	};
+    key <AD09>	{ [ y, Y ]	};
+    key <AD10>	{ [ z, Z ]	};
+    key <AD11>	{ [  ]	};
+    key <AD12>	{ [  ]	};
+
+    key <AC01>	{ [ m, M ]	};
+    key <AC02>	{ [ c, C ]	};
+    key <AC03>	{ [ a, A ]	};
+    key <AC04>	{ [ t, T ]	};
+    key <AC05>	{ [ n, N ]	};
+    key <AC06>	{ [ i, I ]	};
+    key <AC07>	{ [ e, E ]	};
+    key <AC08>	{ [ r, R ]	};
+    key <AC09>	{ [ d, D ]	};
+    key <AC10>	{ [ s, S ]	};
+    key <AC11>	{ [ period, colon ]	};
+    key <BKSL>	{ [ comma, semicolon ]	};
+
+    key <AB01>	{ [ w, W ]	};
+    key <AB02>	{ [ h, H ]	};
+    key <AB03>	{ [ u, U ]	};
+    key <AB04>	{ [ v, V ]	};
+    key <AB05>	{ [ q, Q ]	};
+    key <AB06>	{ [ f, F ]	};
+    key <AB10>	{ [ minus, underscore ]	};
+};
+
+partial alphanumeric_keys
+xkb_symbols "swedish" {
+
+    name[Group1]="Catnierds (Swedish)";
+
+    include "catnierds(basic)"
+
+    key <AB07>	{ [ adiaeresis, Adiaeresis ]	};
+    key <AB08>	{ [ odiaeresis,Odiaeresis  ]	};
+    key <AB09>	{ [ aring, Aring ]	};
+};
