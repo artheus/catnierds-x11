@@ -1,0 +1,90 @@
+// Swedish Catnierds Layout
+
+// Letters
+default alphanumeric_keys modifier_keys
+xkb_symbols "basic" {
+
+    name[Group1]="Catnierds";
+
+    key <TLDE>  { [ slash, question ]  };
+    key <AE01>  { [ 1, exclam ]  };
+    key <AE02>  { [ 2, at ]  };
+    key <AE03>  { [ 3, numbersign ]  };
+    key <AE04>  { [ 4, dollar ]  };
+    key <AE05>  { [ 5, percent ]  };
+    key <AE06>  { [ 6, ampersand ]  };
+    key <AE07>  { [ 7, asciitilde ]  };
+    key <AE08>  { [ 8, asciicircum ]  };
+    key <AE09>  { [ 9, diaeresis ]  };
+    key <AE10>  { [ 0 ]  };
+    key <AE11>  { [ apostrophe, quotedbl ]  };
+    key <AE12>  { [ equal, plus ]  };
+
+    key <AD01>	{ [ j, J ]	};
+    key <AD02>	{ [ k, K ]	};
+    key <AD03>	{ [ p, P ]	};
+    key <AD04>	{ [ o, O ]	};
+    key <AD05>	{ [ b, B ]	};
+    key <AD06>	{ [ g, G ]	};
+    key <AD07>	{ [ l, L ]	};
+    key <AD08>	{ [ x, X ]	};
+    key <AD09>	{ [ y, Y ]	};
+    key <AD10>	{ [ z, Z ]	};
+    key <AD11>	{ [ parenleft, bracketleft, braceleft ]	};
+    key <AD12>	{ [ parenright, bracketright, braceright ]	};
+
+    key <AC01>	{ [ m, M ]	};
+    key <AC02>	{ [ c, C ]	};
+    key <AC03>	{ [ a, A ]	};
+    key <AC04>	{ [ t, T ]	};
+    key <AC05>	{ [ n, N ]	};
+    key <AC06>	{ [ i, I ]	};
+    key <AC07>	{ [ e, E ]	};
+    key <AC08>	{ [ r, R ]	};
+    key <AC09>	{ [ d, D ]	};
+    key <AC10>	{ [ s, S ]	};
+    key <AC11>	{ [ period, colon ]	};
+    key <BKSL>	{ [ comma, semicolon ]	};
+
+    key <LSGT>  { type="TWO_LEVEL", [ less, greater ]    };
+    key <AB01>	{ [ w, W ]	};
+    key <AB02>	{ [ h, H ]	};
+    key <AB03>	{ [ f, F ]	};
+    key <AB04>	{ [ v, V ]	};
+    key <AB05>	{ [ q, Q ]	};
+    key <AB06>	{ [ u, U ]	};
+    key <AB10>	{ [ minus, underscore ]	};
+
+    key <INS>  { [ XF86AudioPrev ] };
+    key <PGUP>  { [ XF86AudioNext ] };
+    key <HOME>  { [ XF86AudioPlay ] };
+    key <DELE>  { [ XF86AudioMute ] };
+    key <END>  { [ XF86AudioLowerVolume ] };
+    key <PGDN>  { [ XF86AudioRaiseVolume ] };
+
+    key <PRSC>  { [ Num_Lock ] };
+    key <PAUS>  { [ Caps_Lock ] };
+
+    // CapsLock to Escape
+    key <CAPS>  { [ Escape ] };
+
+    // Swap meta with super
+    key.type="ONE_LEVEL";
+    key <LALT>  { [ Super_L ] };
+    key <RALT>  { [ Super_R ] };
+    key.type="TWO_LEVEL";
+    key <LWIN>  { [ Alt_L, Meta_L ] };
+    key <RWIN>  { [ Alt_R, Meta_R ] };
+};
+
+partial alphanumeric_keys
+xkb_symbols "swedish" {
+
+    name[Group1]="Catnierds (Swedish)";
+
+    include "catnierds(basic)"
+
+    key <AB07>	{ [ adiaeresis, Adiaeresis, oslash, Ooblique ]	};
+    key <AB08>	{ [ odiaeresis, Odiaeresis, ae, AE ]	};
+    key <AB09>	{ [ aring, Aring ]	};
+};
