@@ -12,11 +12,11 @@ xkb_symbols "basic" {
     key <AE03>  { [ 3, numbersign ]  };
     key <AE04>  { [ 4, dollar ]  };
     key <AE05>  { [ 5, percent ]  };
-    key <AE06>  { [ 6, ampersand ]  };
-    key <AE07>  { [ 7, asciitilde ]  };
-    key <AE08>  { [ 8, asciicircum ]  };
-    key <AE09>  { [ 9, diaeresis ]  };
-    key <AE10>  { [ 0 ]  };
+    key <AE06>  { [ 6, asciitilde ]  };
+    key <AE07>  { [ 7, ampersand ]  };
+    key <AE08>  { [ 8, asterisk ]  };
+    key <AE09>  { [ 9, asciicircum ]  };
+    key <AE10>  { [ 0, diaeresis]  };
     key <AE11>  { [ apostrophe, quotedbl ]  };
     key <AE12>  { [ equal, plus ]  };
 
@@ -68,6 +68,9 @@ xkb_symbols "basic" {
     // CapsLock to Escape
     key <CAPS>  { [ Escape ] };
 
+    // Make Escape special
+    key <ESC> { [ U25FC ]  };
+
     // Swap meta with super
     key.type="ONE_LEVEL";
     key <LALT>  { [ Super_L ] };
@@ -75,6 +78,23 @@ xkb_symbols "basic" {
     key.type="TWO_LEVEL";
     key <LWIN>  { [ Alt_L, Meta_L ] };
     key <RWIN>  { [ Alt_R, Meta_R ] };
+
+    // Special characters FK keys
+    key.type="ONE_LEVEL";
+    key <FK01>    { [ parenleft ] };
+    key <FK02>    { [ parenright ] };
+    key <FK03>    { [ bracketleft ] };
+    key <FK04>    { [ bracketright ] };
+    key <FK05>    { [ braceleft ] };
+    key <FK06>    { [ braceright ] };
+    key <FK07>    { [ less ] };
+    key <FK08>    { [ greater ] };
+
+    key.type="FOUR_LEVEL";
+    key <FK09>    { [ F1, F5, F9 ] };
+    key <FK10>    { [ F2, F6, F10 ] };
+    key <FK11>    { [ F3, F7, F11 ] };
+    key <FK12>    { [ F4, F8, F12 ] };
 };
 
 partial alphanumeric_keys
